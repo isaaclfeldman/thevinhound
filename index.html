@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vinhound — Professional Car Search Concierge</title>
+  <meta name="description" content="Vinhound professionally manages your car search end‑to‑end: requirements intake, sourcing, verification, and coordination." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container hdr">
+      <div class="brand"><div class="logo">V</div><span>Vinhound</span></div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#testimonials">Results</a>
+        <a href="#start" class="btn secondary">Schedule intro</a>
+        <a href="#start" class="btn primary">Start search</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero-wrap">
+    <div class="container hero" id="start">
+      <div>
+        <span class="eyebrow">Enterprise‑grade car search concierge</span>
+        <h1>Find the right car — and buy with confidence.</h1>
+        <p class="sub">Requirements in. Verified options out. Vinhound manages sourcing, history checks, and coordination—delivering shortlists that save time and eliminate guesswork.</p>
+        <div class="lead-card">
+          <form class="form" id="leadForm">
+            <input type="text" name="query" placeholder="VIN or Wishlist (e.g., 2022–2024 RAV4 Hybrid AWD <45k mi)">
+            <input type="tel" name="phone" placeholder="Mobile number">
+            <button class="btn primary" type="submit">Start the hunt →</button>
+            <small style="display:block;color:#a9b7d8">We’ll text you verified options. Standard messaging rates may apply.</small>
+          </form>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Preview">
+        <div class="hero-img"></div>
+        <div class="hero-caption">Example shortlist • 2023 RAV4 Hybrid XLE • 31k mi • 1‑owner • Clean history</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="kpis">
+    <div class="container inner">
+      <div class="kpi"><strong>250+ sources</strong><span>Dealers & private sellers</span></div>
+      <div class="kpi"><strong>48h</strong><span>Typical first shortlist</span></div>
+      <div class="kpi"><strong>4.9/5</strong><span>Client satisfaction</span></div>
+      <div class="kpi"><strong>CA‑ready</strong><span>Clear consent & disclosures</span></div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="services" class="section">
+      <h2>What we deliver</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="k">Verification</div>
+          <strong>VIN decoding & recall checks</strong>
+          <div class="muted">Translate trims and options, surface open recalls, and summarize what matters.</div>
+        </div>
+        <div class="card">
+          <div class="k">Sourcing</div>
+          <strong>Nationwide search & shortlists</strong>
+          <div class="muted">Aggregate, filter, and rank real availability from dealers and private sellers.</div>
+        </div>
+        <div class="card">
+          <div class="k">Coordination</div>
+          <strong>Inspection & deal support</strong>
+          <div class="muted">Third‑party inspections, media review, and scheduling—at your pace.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><strong>Intake</strong><div class="muted">Wishlist or VIN. Budget & must‑haves.</div></div>
+        <div class="step"><div class="num">2</div><strong>Search</strong><div class="muted">Sourcing, verification, and shortlist.</div></div>
+        <div class="step"><div class="num">3</div><strong>Decide</strong><div class="muted">You pick. We coordinate next steps.</div></div>
+      </div>
+    </section>
+  </main>
+
+  <section id="testimonials" class="testimonials section">
+    <div class="container">
+      <h2>Results clients talk about</h2>
+      <div class="quotes">
+        <div class="quote">“Vinhound narrowed a sea of listings to three perfect options. We signed the next day.”<div class="who"><div class="avatar"></div><strong>Marissa T.</strong> • San Luis Obispo</div></div>
+        <div class="quote">“The verification saved us from a problem car. Worth it for that alone.”<div class="who"><div class="avatar"></div><strong>Jared P.</strong> • Santa Barbara</div></div>
+        <div class="quote">“White‑glove and fast. I won’t shop any other way.”<div class="who"><div class="avatar"></div><strong>Kelly R.</strong> • Paso Robles</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="container">
+      <div class="band">
+        <div>
+          <div class="k" style="color:#9fb3e6">Get started</div>
+          <strong style="font-size:22px">Ready when you are.</strong>
+          <div style="color:#c3d0ee">Share a VIN or wishlist—receive verified options within one business day.</div>
+        </div>
+        <div class="actions">
+          <a class="btn ghost" href="#start">Schedule intro</a>
+          <a class="btn primary" href="#start">Start search</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container ftr">
+      <div class="brand"><div class="logo">V</div><span>Vinhound</span></div>
+      <div class="links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </div>
+      <span class="muted">© <span id="year"></span> Vinhound</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
