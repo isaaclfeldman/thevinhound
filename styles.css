@@ -19,14 +19,17 @@ header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:sa
 .hero{padding:92px 0 72px;display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);font-size:13px;color:#dbe6ff}
 h1{font-size:60px;line-height:1.04;margin:12px 0 14px;font-weight:800;letter-spacing:-.02em}
+.headline-fade{opacity:.95}
 .sub{font-size:20px;color:#c3d0ee;max-width:64ch;margin:0 0 24px}
 .lead-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);border-radius:var(--radius-lg);padding:16px;box-shadow:0 12px 32px rgba(0,0,0,.35)}
 .form{display:flex;gap:10px;flex-wrap:wrap}
-input[type="text"],input[type="tel"]{flex:1;min-width:260px;padding:14px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.24);background:rgba(8,14,28,.6);color:#fff;outline:none}
+input[type="text"],input[type="tel"],input[type="email"]{flex:1;min-width:220px;padding:14px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.24);background:rgba(8,14,28,.6);color:#fff;outline:none}
 input::placeholder{color:#9bb0d6}
 input:focus{border-color:#a9c1ff;box-shadow:0 0 0 8px rgba(169,193,255,.14)}
+.small-note{display:block;color:#a9b7d8;margin-top:6px}
 .hero-card{background:#0f1e3d;border:1px solid rgba(255,255,255,.14);border-radius:20px;min-height:360px;box-shadow:0 18px 40px rgba(2,8,22,.55);overflow:hidden;position:relative}
-.hero-img{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,17,36,.1),rgba(10,17,36,.6)), repeating-linear-gradient(90deg, rgba(255,255,255,.04) 0 1px, transparent 1px 4px)}
+.hero-photo{background:#0f1e3d url("hero.jpg") center/cover no-repeat}
+.hero-photo::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(8,14,28,.00), rgba(8,14,28,.35))}
 .hero-caption{position:absolute;bottom:16px;left:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(6px);padding:10px 12px;border-radius:12px;font-size:12px;color:#eaf1ff}
 .kpis{background:#0f172e;color:#fff;border-top:1px solid #132048;border-bottom:1px solid #132048}
 .kpis .inner{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:22px 0}
@@ -41,11 +44,12 @@ input:focus{border-color:#a9c1ff;box-shadow:0 0 0 8px rgba(169,193,255,.14)}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .step{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff}
 .num{display:inline-flex;width:28px;height:28px;border-radius:9px;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--primary),#19c37d);color:#fff;font-weight:800;margin-bottom:8px}
-.testimonials{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.quote{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 10px 24px rgba(8,14,28,.05)}
-.quote .who{display:flex;align-items:center;gap:10px;margin-top:10px;color:#2b3950}
-.avatar{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#dfe7f5,#f4f7fc)}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.p-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 14px 30px rgba(8,14,28,.06)}
+.p-card.featured{border-color:#6f8cff;box-shadow:0 18px 40px rgba(70,90,255,.18)}
+.p-name{font-size:12px;color:#647089;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.p-price{font-size:36px;font-weight:800;margin-bottom:8px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:10px 0}
 .cta .band{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:#0d1b38;border:1px solid #14254a;border-radius:18px;padding:22px;color:#eaf1ff;box-shadow:0 14px 34px rgba(2,8,22,.45)}
 .cta .band .actions{display:flex;gap:12px}
 footer{border-top:1px solid var(--line);padding:30px 0 60px}
@@ -56,6 +60,5 @@ footer{border-top:1px solid var(--line);padding:30px 0 60px}
   .hero{grid-template-columns:1fr}
   h1{font-size:52px}
   .kpis .inner{grid-template-columns:1fr 1fr}
-  .quotes{grid-template-columns:1fr}
-  .grid-3,.steps{grid-template-columns:1fr}
+  .grid-3,.steps,.pricing{grid-template-columns:1fr}
 }

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vinhound — Professional Car Search Concierge</title>
-  <meta name="description" content="Vinhound professionally manages your car search end‑to‑end: requirements intake, sourcing, verification, and coordination." />
+  <title>Vinhound — Car Search Concierge</title>
+  <meta name="description" content="From toy cars to real VIN matches — Vinhound finds, verifies, and sources the right car for you.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,98 +13,161 @@
 <body>
   <header>
     <div class="container hdr">
-      <div class="brand"><div class="logo">V</div><span>Vinhound</span></div>
+      <a class="brand" href="#top"><div class="logo">V</div><span>Vinhound</span></a>
       <nav class="nav">
         <a href="#services">Services</a>
         <a href="#process">Process</a>
-        <a href="#testimonials">Results</a>
-        <a href="#start" class="btn secondary">Schedule intro</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#start" class="btn secondary">Intro call</a>
         <a href="#start" class="btn primary">Start search</a>
       </nav>
     </div>
   </header>
 
-  <div class="hero-wrap">
+  <!-- HERO -->
+  <div class="hero-wrap" id="top">
     <div class="container hero" id="start">
       <div>
-        <span class="eyebrow">Enterprise‑grade car search concierge</span>
-        <h1>Find the right car — and buy with confidence.</h1>
-        <p class="sub">Requirements in. Verified options out. Vinhound manages sourcing, history checks, and coordination—delivering shortlists that save time and eliminate guesswork.</p>
+        <span class="eyebrow">Car search concierge</span>
+        <h1>
+          Some things never change.<br />
+          <span class="headline-fade">The toys just get bigger.</span>
+        </h1>
+        <p class="sub">
+          From floor‑racing Matchbox cars to real VIN matches — Vinhound hunts down the one you’ve imagined.
+          We source it, verify it, and deliver a shortlist you can buy with confidence.
+        </p>
         <div class="lead-card">
           <form class="form" id="leadForm">
-            <input type="text" name="query" placeholder="VIN or Wishlist (e.g., 2022–2024 RAV4 Hybrid AWD <45k mi)">
-            <input type="tel" name="phone" placeholder="Mobile number">
-            <button class="btn primary" type="submit">Start the hunt →</button>
-            <small style="display:block;color:#a9b7d8">We’ll text you verified options. Standard messaging rates may apply.</small>
+            <input type="text" name="query" id="query" placeholder="VIN or Wishlist (e.g., 2022–2024 RAV4 Hybrid AWD &lt;45k mi)" required>
+            <input type="tel" name="phone" id="phone" placeholder="Mobile number (optional)">
+            <input type="email" name="email" id="email" placeholder="Email (for summary)">
+            <button class="btn primary" type="submit">Start your hunt →</button>
+            <small class="small-note">We’ll text or email verified options. Standard messaging rates may apply.</small>
           </form>
         </div>
       </div>
-      <div class="hero-card" aria-label="Preview">
-        <div class="hero-img"></div>
-        <div class="hero-caption">Example shortlist • 2023 RAV4 Hybrid XLE • 31k mi • 1‑owner • Clean history</div>
-      </div>
+      <figure class="hero-card hero-photo" aria-label="Kids racing toy cars on a wood floor in natural light">
+        <figcaption class="hero-caption">From toy races to real keys — buy with confidence.</figcaption>
+      </figure>
     </div>
   </div>
 
+  <!-- TRUST STRIP -->
   <section class="kpis">
     <div class="container inner">
       <div class="kpi"><strong>250+ sources</strong><span>Dealers & private sellers</span></div>
-      <div class="kpi"><strong>48h</strong><span>Typical first shortlist</span></div>
-      <div class="kpi"><strong>4.9/5</strong><span>Client satisfaction</span></div>
-      <div class="kpi"><strong>CA‑ready</strong><span>Clear consent & disclosures</span></div>
+      <div class="kpi"><strong>&lt; 48h</strong><span>First shortlist delivered</span></div>
+      <div class="kpi"><strong>VIN-first</strong><span>Recalls & option decode</span></div>
+      <div class="kpi"><strong>White‑glove</strong><span>Inspection & coordination</span></div>
     </div>
   </section>
 
   <main class="container">
+    <!-- SERVICES -->
     <section id="services" class="section">
       <h2>What we deliver</h2>
       <div class="grid-3">
         <div class="card">
           <div class="k">Verification</div>
-          <strong>VIN decoding & recall checks</strong>
-          <div class="muted">Translate trims and options, surface open recalls, and summarize what matters.</div>
+          <strong>VIN decoding, recalls & condition signals</strong>
+          <div class="muted">Trims, options, TSBs, open recalls, ownership patterns — distilled into a plain‑English summary.</div>
         </div>
         <div class="card">
           <div class="k">Sourcing</div>
-          <strong>Nationwide search & shortlists</strong>
-          <div class="muted">Aggregate, filter, and rank real availability from dealers and private sellers.</div>
+          <strong>Nationwide search with ranked shortlists</strong>
+          <div class="muted">Real availability across marketplaces, franchise dealers, and private sellers — filtered to your must‑haves.</div>
         </div>
         <div class="card">
           <div class="k">Coordination</div>
-          <strong>Inspection & deal support</strong>
-          <div class="muted">Third‑party inspections, media review, and scheduling—at your pace.</div>
+          <strong>Inspections, media & deal support</strong>
+          <div class="muted">3rd‑party inspections, photo/video review, and scheduling — at your pace.</div>
         </div>
       </div>
     </section>
 
+    <!-- PROCESS -->
     <section id="process" class="section">
       <h2>How it works</h2>
       <div class="steps">
-        <div class="step"><div class="num">1</div><strong>Intake</strong><div class="muted">Wishlist or VIN. Budget & must‑haves.</div></div>
-        <div class="step"><div class="num">2</div><strong>Search</strong><div class="muted">Sourcing, verification, and shortlist.</div></div>
+        <div class="step"><div class="num">1</div><strong>Intake</strong><div class="muted">Share a VIN or wishlist. Budget & must‑haves.</div></div>
+        <div class="step"><div class="num">2</div><strong>Search</strong><div class="muted">Source & verify candidates. Rank by fit.</div></div>
         <div class="step"><div class="num">3</div><strong>Decide</strong><div class="muted">You pick. We coordinate next steps.</div></div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <h2>Simple pricing</h2>
+      <div class="pricing">
+        <div class="p-card">
+          <div class="p-name">Starter</div>
+          <div class="p-price">$0</div>
+          <ul>
+            <li>Basic shortlist (3–5 matches)</li>
+            <li>VIN decode & recall check</li>
+            <li>Email summary</li>
+          </ul>
+          <a href="#start" class="btn ghost">Start free</a>
+        </div>
+        <div class="p-card featured">
+          <div class="p-name">Concierge</div>
+          <div class="p-price">$299</div>
+          <ul>
+            <li>Ranked shortlist (10+ matches)</li>
+            <li>Condition & market signals</li>
+            <li>Inspection & scheduling help</li>
+            <li>Text updates</li>
+          </ul>
+          <a href="#start" class="btn primary">Start concierge</a>
+        </div>
+        <div class="p-card">
+          <div class="p-name">Pro</div>
+          <div class="p-price">$999</div>
+          <ul>
+            <li>Buyer’s agent style support</li>
+            <li>Negotiation prep & docs</li>
+            <li>Priority sourcing</li>
+          </ul>
+          <a href="#start" class="btn ghost">Talk to us</a>
+        </div>
+      </div>
+      <small class="muted">Custom sourcing for exotics & fleets on request.</small>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary>Do I need a VIN to start?</summary>
+          <p>No — a wishlist works: budget, body style, must‑haves, mileage, and location.</p>
+        </details>
+        <details>
+          <summary>How fast will I see options?</summary>
+          <p>Typical first shortlist within 48 hours. Faster with a VIN.</p>
+        </details>
+        <details>
+          <summary>Do you take referral fees from dealers?</summary>
+          <p>No. We’re aligned with the buyer. Any third‑party incentive is disclosed or refused.</p>
+        </details>
+        <details>
+          <summary>What areas do you cover?</summary>
+          <p>Primarily California, with nationwide sourcing on request.</p>
+        </details>
       </div>
     </section>
   </main>
 
-  <section id="testimonials" class="testimonials section">
-    <div class="container">
-      <h2>Results clients talk about</h2>
-      <div class="quotes">
-        <div class="quote">“Vinhound narrowed a sea of listings to three perfect options. We signed the next day.”<div class="who"><div class="avatar"></div><strong>Marissa T.</strong> • San Luis Obispo</div></div>
-        <div class="quote">“The verification saved us from a problem car. Worth it for that alone.”<div class="who"><div class="avatar"></div><strong>Jared P.</strong> • Santa Barbara</div></div>
-        <div class="quote">“White‑glove and fast. I won’t shop any other way.”<div class="who"><div class="avatar"></div><strong>Kelly R.</strong> • Paso Robles</div></div>
-      </div>
-    </div>
-  </section>
-
+  <!-- CTA -->
   <section class="section cta">
     <div class="container">
       <div class="band">
         <div>
           <div class="k" style="color:#9fb3e6">Get started</div>
           <strong style="font-size:22px">Ready when you are.</strong>
-          <div style="color:#c3d0ee">Share a VIN or wishlist—receive verified options within one business day.</div>
+          <div style="color:#c3d0ee">Share a VIN or wishlist — receive verified options within one business day.</div>
         </div>
         <div class="actions">
           <a class="btn ghost" href="#start">Schedule intro</a>
