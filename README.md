@@ -1,15 +1,20 @@
-# The Vinhound v3 — Static Site + Minimal Backend
 
-Static HTML/CSS/JS plus a Vercel serverless function for lead capture.
+# Vinhound – Platform Starter (AI + Monetization)
 
-## Files
-- index.html, styles.css, script.js
-- hero.jpg (hero image)
-- api/lead.js — POST /api/lead
-- vercel.json — enables serverless runtime for /api
+**Deploy to Vercel** → Upload this ZIP as a new deployment in your existing project.
 
-## Optional environment variables (Vercel → Project → Settings → Environment Variables)
-- NOTIFY_EMAIL — where to send lead notifications
-- RESEND_API_KEY — email provider API key (optional)
-
-Deploy: push to GitHub; Vercel redeploys. The form posts to /api/lead.
+## Env Vars (set later)
+OPENAI_API_KEY
+STRIPE_SECRET_KEY
+STRIPE_WEBHOOK_SECRET
+STRIPE_PRICE_10
+STRIPE_PRICE_25
+STRIPE_PRICE_100
+PUBLIC_URL
+AIRTABLE_TOKEN
+AIRTABLE_BASE
+AIRTABLE_TABLE
+TWILIO_SID
+TWILIO_AUTH
+TWILIO_FROM
+ALERT_TO
